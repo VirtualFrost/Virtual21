@@ -1,5 +1,5 @@
 # Virtual 21
-##Current Version: 1.0.0
+##Current Version: 1.0.1
 [Download Here](https://github.com/VirtualFrost/Virtual21/blob/master/Virtual21.exe "Download Here")
 
 ##Description
@@ -10,6 +10,10 @@ Virtual 21 is a mini game with an objective similar to Blackjack. There is curre
 ![alt text](http://i.imgur.com/AsloCGY.png "Preview 1 - v1.0.0")
 
 ##Version History
+### 1.0.1
+- Fixed computers hand not resetting after every game.
+- Random no longer initializes after every time you press the 'Hit' button.
+
 ###v1.0.0
 - Initial Release.
 
