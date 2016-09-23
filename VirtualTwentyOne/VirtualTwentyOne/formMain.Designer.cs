@@ -45,6 +45,7 @@
             this.valueHundredBtn = new System.Windows.Forms.Button();
             this.resetBtn = new System.Windows.Forms.Button();
             this.startBtn = new System.Windows.Forms.Button();
+            this.compHandLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,6 +145,7 @@
             this.valueOneBtn.TabIndex = 8;
             this.valueOneBtn.Text = "+1";
             this.valueOneBtn.UseVisualStyleBackColor = true;
+            this.valueOneBtn.Click += new System.EventHandler(this.valueOneBtn_Click);
             // 
             // valueFiveBtn
             // 
@@ -153,6 +155,7 @@
             this.valueFiveBtn.TabIndex = 9;
             this.valueFiveBtn.Text = "+5";
             this.valueFiveBtn.UseVisualStyleBackColor = true;
+            this.valueFiveBtn.Click += new System.EventHandler(this.valueFiveBtn_Click);
             // 
             // valueTenBtn
             // 
@@ -162,6 +165,7 @@
             this.valueTenBtn.TabIndex = 10;
             this.valueTenBtn.Text = "+10";
             this.valueTenBtn.UseVisualStyleBackColor = true;
+            this.valueTenBtn.Click += new System.EventHandler(this.valueTenBtn_Click);
             // 
             // valueTwentyBtn
             // 
@@ -171,6 +175,7 @@
             this.valueTwentyBtn.TabIndex = 11;
             this.valueTwentyBtn.Text = "+20";
             this.valueTwentyBtn.UseVisualStyleBackColor = true;
+            this.valueTwentyBtn.Click += new System.EventHandler(this.valueTwentyBtn_Click);
             // 
             // valueFiftyBtn
             // 
@@ -180,6 +185,7 @@
             this.valueFiftyBtn.TabIndex = 12;
             this.valueFiftyBtn.Text = "+50";
             this.valueFiftyBtn.UseVisualStyleBackColor = true;
+            this.valueFiftyBtn.Click += new System.EventHandler(this.valueFiftyBtn_Click);
             // 
             // valueHundredBtn
             // 
@@ -189,6 +195,7 @@
             this.valueHundredBtn.TabIndex = 13;
             this.valueHundredBtn.Text = "+100";
             this.valueHundredBtn.UseVisualStyleBackColor = true;
+            this.valueHundredBtn.Click += new System.EventHandler(this.valueHundredBtn_Click);
             // 
             // resetBtn
             // 
@@ -198,6 +205,7 @@
             this.resetBtn.TabIndex = 14;
             this.resetBtn.Text = "Reset";
             this.resetBtn.UseVisualStyleBackColor = true;
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
             // 
             // startBtn
             // 
@@ -209,12 +217,25 @@
             this.startBtn.UseVisualStyleBackColor = true;
             this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
+            // compHandLbl
+            // 
+            this.compHandLbl.AutoSize = true;
+            this.compHandLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(98)))), ((int)(((byte)(2)))));
+            this.compHandLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compHandLbl.ForeColor = System.Drawing.Color.White;
+            this.compHandLbl.Location = new System.Drawing.Point(316, 62);
+            this.compHandLbl.Name = "compHandLbl";
+            this.compHandLbl.Size = new System.Drawing.Size(24, 25);
+            this.compHandLbl.TabIndex = 16;
+            this.compHandLbl.Text = "0";
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(800, 349);
+            this.Controls.Add(this.compHandLbl);
             this.Controls.Add(this.startBtn);
             this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.valueHundredBtn);
@@ -259,6 +280,7 @@
         private System.Windows.Forms.Button valueHundredBtn;
         private System.Windows.Forms.Button resetBtn;
         private System.Windows.Forms.Button startBtn;
+        private System.Windows.Forms.Label compHandLbl;
     }
 }
 
