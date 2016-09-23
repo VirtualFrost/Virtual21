@@ -17,9 +17,10 @@ namespace VirtualTwentyOne
         int playerBalance = 100;
         int cardValue;
 
+        Random card = new Random();
+
         private void hitBtn_Click(object sender, EventArgs e)
         {
-            Random card = new Random();
             cardValue = card.Next(1, 10);
 
             playerValue = playerValue + cardValue;
@@ -46,6 +47,9 @@ namespace VirtualTwentyOne
 
                 playerValue = 0;
                 playerHandLbl.Text = Convert.ToString(playerValue);
+
+                compValue = 0;
+                compHandLbl.Text = Convert.ToString(compValue);
 
                 startBtn.Enabled = false;
                 playerBalance = playerBalance - playerBet;
